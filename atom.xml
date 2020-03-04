@@ -2,22 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://binghan1227.github.io</id>
     <title>binghan1227</title>
-    <updated>2020-03-04T09:55:37.572Z</updated>
+    <updated>2020-03-04T10:11:18.162Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://binghan1227.github.io"/>
     <link rel="self" href="https://binghan1227.github.io/atom.xml"/>
-    <subtitle>&lt;script type=&quot;text/javascript&quot;&gt;
-&lt;!--
-var len=3;//提示文字数，为了例子简单，所以只设3段文字
-var rnd=Math.floor(Math.random()*len);
-var txt=new Array(len);
-txt[0]=&quot;早起的鸟儿有虫吃&quot;;
-txt[1]=&quot;加油,奥利给!&quot;;
-txt[2]=&quot;我只是个蒟篛&quot;;
-document.write(txt[rnd]);
-//--&gt;
-&lt;/script&gt;
-</subtitle>
+    <subtitle>&lt;script type=&quot;text/javascript&quot;&gt;var len=4;var rnd=Math.floor(Math.random()*len);var txt=new Array(len);txt[0]=&quot;早起的鸟儿有虫吃&quot;;txt[1]=&quot;加油,奥利给!&quot;;txt[2]=&quot;我只是个蒟篛&quot;;txt[3]=&quot;你是怎么发现这个网站的?&quot;;document.write(txt[rnd]);&lt;/script&gt;</subtitle>
     <logo>https://binghan1227.github.io/images/avatar.png</logo>
     <icon>https://binghan1227.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, binghan1227</rights>
