@@ -2,11 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://binghan1227.github.io</id>
     <title>binghan1227</title>
-    <updated>2020-03-04T06:14:09.095Z</updated>
+    <updated>2020-03-04T09:39:35.981Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://binghan1227.github.io"/>
     <link rel="self" href="https://binghan1227.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>&lt;html&gt;&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=gb2312&quot;&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;script language=&quot;JavaScript&quot;&gt;
+&lt;!-- Hide
+var a = Math.random() + &quot;&quot;
+var rand1 = a.charAt(5)
+quotes = new Array
+&lt;!-- 修改下面的文字为你需要的文字--&gt;
+quotes[1] = &apos;1&apos;
+quotes[2] = &apos;2&apos;
+quotes[3] = &apos;3&apos;
+quotes[4] = &apos;4&apos;
+quotes[5] = &apos;5&apos;
+quotes[6] = &apos;6&apos;
+quotes[7] = &apos;7&apos;
+quotes[8] = &apos;8&apos;
+quotes[9] = &apos;9&apos;
+quotes[0] = &apos;10&apos;
+var quote = quotes[rand1]
+&lt;/script&gt;
+&lt;script language=&quot;JavaScript&quot;&gt;
+&lt;!-- Hide
+document.write(quote)
+&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;
+</subtitle>
     <logo>https://binghan1227.github.io/images/avatar.png</logo>
     <icon>https://binghan1227.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, binghan1227</rights>
