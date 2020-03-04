@@ -2,35 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://binghan1227.github.io</id>
     <title>binghan1227</title>
-    <updated>2020-03-04T09:40:38.906Z</updated>
+    <updated>2020-03-04T09:55:37.572Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://binghan1227.github.io"/>
     <link rel="self" href="https://binghan1227.github.io/atom.xml"/>
-    <subtitle>&lt;html&gt;&lt;head&gt;
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=gb2312&quot;&gt;
-&lt;/head&gt;&lt;body&gt;
-&lt;script language=&quot;JavaScript&quot;&gt;
-&lt;!-- Hide
-var a = Math.random() + &quot;&quot;
-var rand1 = a.charAt(5)
-quotes = new Array
-&lt;!-- 修改下面的文字为你需要的文字--&gt;
-quotes[1] = &apos;1&apos;
-quotes[2] = &apos;2&apos;
-quotes[3] = &apos;3&apos;
-quotes[4] = &apos;4&apos;
-quotes[5] = &apos;5&apos;
-quotes[6] = &apos;6&apos;
-quotes[7] = &apos;7&apos;
-quotes[8] = &apos;8&apos;
-quotes[9] = &apos;9&apos;
-quotes[0] = &apos;10&apos;
-var quote = quotes[rand1]
+    <subtitle>&lt;script type=&quot;text/javascript&quot;&gt;
+&lt;!--
+var len=3;//提示文字数，为了例子简单，所以只设3段文字
+var rnd=Math.floor(Math.random()*len);
+var txt=new Array(len);
+txt[0]=&quot;早起的鸟儿有虫吃&quot;;
+txt[1]=&quot;加油,奥利给!&quot;;
+txt[2]=&quot;我只是个蒟篛&quot;;
+document.write(txt[rnd]);
+//--&gt;
 &lt;/script&gt;
-&lt;script language=&quot;JavaScript&quot;&gt;
-&lt;!-- Hide
-document.write(quote)
-&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;
 </subtitle>
     <logo>https://binghan1227.github.io/images/avatar.png</logo>
     <icon>https://binghan1227.github.io/favicon.ico</icon>
