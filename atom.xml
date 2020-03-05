@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://binghan1227.github.io</id>
     <title>binghan1227</title>
-    <updated>2020-03-04T10:20:43.737Z</updated>
+    <updated>2020-03-05T03:01:20.975Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://binghan1227.github.io"/>
     <link rel="self" href="https://binghan1227.github.io/atom.xml"/>
@@ -11,9 +11,18 @@
     <icon>https://binghan1227.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, binghan1227</rights>
     <entry>
+        <title type="html"><![CDATA[2020/3/5]]></title>
+        <id>https://binghan1227.github.io/post/202035/</id>
+        <link href="https://binghan1227.github.io/post/202035/">
+        </link>
+        <updated>2020-03-05T02:59:28.000Z</updated>
+        <content type="html"><![CDATA[<p>狗东这是怎么了，快递怎么那么快？？？</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[2020/3/4]]></title>
-        <id>https://binghan1227.github.io/post/200304/</id>
-        <link href="https://binghan1227.github.io/post/200304/">
+        <id>https://binghan1227.github.io/post/202034/</id>
+        <link href="https://binghan1227.github.io/post/202034/">
         </link>
         <updated>2020-03-04T06:03:54.000Z</updated>
         <content type="html"><![CDATA[<p>正经人谁写日记啊       ———姜文<br>
