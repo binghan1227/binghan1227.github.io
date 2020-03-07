@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://binghan1227.github.io</id>
     <title>binghan1227</title>
-    <updated>2020-03-07T11:31:31.802Z</updated>
+    <updated>2020-03-07T23:26:31.723Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://binghan1227.github.io"/>
     <link rel="self" href="https://binghan1227.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://binghan1227.github.io/images/avatar.png</logo>
     <icon>https://binghan1227.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, binghan1227</rights>
+    <entry>
+        <title type="html"><![CDATA[2020/3/8]]></title>
+        <id>https://binghan1227.github.io/post/202038/</id>
+        <link href="https://binghan1227.github.io/post/202038/">
+        </link>
+        <updated>2020-03-07T23:25:16.000Z</updated>
+        <content type="html"><![CDATA[<p>😭😭😭洛谷上测，那唯一交上去的一题还只有20分，555555555555</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020/3/7]]></title>
         <id>https://binghan1227.github.io/post/202037/</id>
@@ -24,6 +33,9 @@
 <hr>
 <p>服务器又双叒叕炸了。。。算了，不打了，累了🙄<br>
 <s>CCF真棒</s></p>
+<hr>
+<p><img src="https://binghan1227.github.io/post-images/1583623477190.jpeg" alt="" loading="lazy"><br>
+这都到23点了，emmmmmmmmm...</p>
 ]]></content>
     </entry>
     <entry>
