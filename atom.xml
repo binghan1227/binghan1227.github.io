@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://binghan1227.github.io</id>
     <title>binghan1227</title>
-    <updated>2020-03-07T23:26:31.723Z</updated>
+    <updated>2020-03-08T06:51:03.208Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://binghan1227.github.io"/>
     <link rel="self" href="https://binghan1227.github.io/atom.xml"/>
@@ -16,7 +16,11 @@
         <link href="https://binghan1227.github.io/post/202038/">
         </link>
         <updated>2020-03-07T23:25:16.000Z</updated>
+        <summary type="html"><![CDATA[<p>😭😭😭洛谷上测，那唯一交上去的一题还只有20分，555555555555</p>
+]]></summary>
         <content type="html"><![CDATA[<p>😭😭😭洛谷上测，那唯一交上去的一题还只有20分，555555555555</p>
+<!-- more -->
+<p>好吧，我现在很高兴，因为我把智能插座弄到homekit上了</p>
 ]]></content>
     </entry>
     <entry>
