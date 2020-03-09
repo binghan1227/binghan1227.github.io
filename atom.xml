@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://binghan1227.github.io</id>
     <title>binghan1227</title>
-    <updated>2020-03-09T08:08:36.421Z</updated>
+    <updated>2020-03-09T08:13:42.098Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://binghan1227.github.io"/>
     <link rel="self" href="https://binghan1227.github.io/atom.xml"/>
@@ -10,6 +10,19 @@
     <logo>https://binghan1227.github.io/images/avatar.png</logo>
     <icon>https://binghan1227.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, binghan1227</rights>
+    <entry>
+        <title type="html"><![CDATA[2020/3/9]]></title>
+        <id>https://binghan1227.github.io/post/202039/</id>
+        <link href="https://binghan1227.github.io/post/202039/">
+        </link>
+        <updated>2020-03-09T08:08:56.000Z</updated>
+        <summary type="html"><![CDATA[<p>哈，今天我把网页链接到了Google Analytics里了</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>哈，今天我把网页链接到了Google Analytics里了</p>
+<!-- more -->
+<p>以后我就能看见是谁<s>在敲打我窗</s>来看我的博客了</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020/3/8]]></title>
         <id>https://binghan1227.github.io/post/202038/</id>
