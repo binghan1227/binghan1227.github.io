@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://binghan1227.github.io</id>
     <title>binghan1227</title>
-    <updated>2020-03-12T23:57:27.527Z</updated>
+    <updated>2020-03-24T08:26:30.988Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://binghan1227.github.io"/>
     <link rel="self" href="https://binghan1227.github.io/atom.xml"/>
@@ -10,6 +10,53 @@
     <logo>https://binghan1227.github.io/images/avatar.png</logo>
     <icon>https://binghan1227.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, binghan1227</rights>
+    <entry>
+        <title type="html"><![CDATA[Mac+HomeBridge+米家=?]]></title>
+        <id>https://binghan1227.github.io/post/homebridge/</id>
+        <link href="https://binghan1227.github.io/post/homebridge/">
+        </link>
+        <updated>2020-03-24T07:55:45.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>众所周知，原生支持homekit的智能设备普遍很贵，那么，便宜的米家设备就成为了智能家居的不二之选，如何将不支持homekit的设备接入米家呢？答案就是HomeBridge。</p>
+</blockquote>
+<h2 id="一安装homebridge">一.安装HomeBridge</h2>
+<h3 id="step-1-安装-xcode">Step 1. 安装 Xcode</h3>
+<p>在App Store中下载安装即可。</p>
+<h3 id="step-2-安装-nodejs">Step 2. 安装 Node.js</h3>
+<p>在<a href="http://nodejs.cn">官网</a>中下载安装。</p>
+<h3 id="step-3-安装homebridge">Step 3. 安装HomeBridge</h3>
+<p>在terminal(终端)中输入</p>
+<pre><code>sudo npm -g install homebridge
+</code></pre>
+<h3 id="step-4-创建并编辑config文件">Step 4. 创建并编辑config文件</h3>
+<blockquote>
+<p>在这步可以有多种选择，我更推荐使用Xcode来编辑。</p>
+</blockquote>
+<h4 id="1-创建文件">① 创建文件</h4>
+<p>在终端中输入</p>
+<pre><code>cd ~/.homebridge/
+vi config.json
+</code></pre>
+<h4 id="2-编辑文件">② 编辑文件</h4>
+<p>在访达中选择前往文件夹，输入~/.homebridge/<br>
+再用Xcode打开config.json文件，并输入</p>
+<pre><code>{
+    &quot;bridge&quot;: {
+        &quot;name&quot;: &quot;HomeBridge&quot;,
+        &quot;username&quot;: &quot;B8:27:EB:EE:AF:1B&quot;,
+        &quot;port&quot;: 54642,
+        &quot;pin&quot;: &quot;031-45-154&quot;
+    }
+}
+</code></pre>
+<h3 id="step-5-运行homebridge">Step 5. 运行HomeBridge</h3>
+<p>在终端中输入</p>
+<pre><code>homebridge
+</code></pre>
+<p>正常情况下你将会看到一个二维码，但如果后面还有一堆红色文字，那么就是你的端口被占用了，更改config文件中的port即可。<br>
+<font color=#FF0000>※ 想要停止HomeBridge可以直接关掉终端，或者是按ctrl + c。</font></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020/3/12]]></title>
         <id>https://binghan1227.github.io/post/2020312/</id>
