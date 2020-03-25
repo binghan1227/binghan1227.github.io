@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://binghan1227.github.io</id>
     <title>binghan1227</title>
-    <updated>2020-03-24T08:26:30.988Z</updated>
+    <updated>2020-03-25T01:05:35.094Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://binghan1227.github.io"/>
     <link rel="self" href="https://binghan1227.github.io/atom.xml"/>
@@ -16,9 +16,14 @@
         <link href="https://binghan1227.github.io/post/homebridge/">
         </link>
         <updated>2020-03-24T07:55:45.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>众所周知，原生支持homekit的智能设备普遍很贵，那么，便宜的米家设备就成为了智能家居的不二之选，如何将不支持homekit的设备接入米家呢？答案就是HomeBridge。</p>
+</blockquote>
+]]></summary>
         <content type="html"><![CDATA[<blockquote>
 <p>众所周知，原生支持homekit的智能设备普遍很贵，那么，便宜的米家设备就成为了智能家居的不二之选，如何将不支持homekit的设备接入米家呢？答案就是HomeBridge。</p>
 </blockquote>
+<!-- more -->
 <h2 id="一安装homebridge">一.安装HomeBridge</h2>
 <h3 id="step-1-安装-xcode">Step 1. 安装 Xcode</h3>
 <p>在App Store中下载安装即可。</p>
@@ -32,14 +37,16 @@
 <blockquote>
 <p>在这步可以有多种选择，我更推荐使用Xcode来编辑。</p>
 </blockquote>
-<h4 id="1-创建文件">① 创建文件</h4>
-<p>在终端中输入</p>
+<h4 id="1-创建文件">(1) 创建文件</h4>
+<p>在terminal(终端)中输入</p>
 <pre><code>cd ~/.homebridge/
 vi config.json
 </code></pre>
-<h4 id="2-编辑文件">② 编辑文件</h4>
-<p>在访达中选择前往文件夹，输入~/.homebridge/<br>
-再用Xcode打开config.json文件，并输入</p>
+<h4 id="2-编辑文件">(2) 编辑文件</h4>
+<p>在访达&gt;「前往」&gt;「前往文件夹」，输入路径</p>
+<pre><code>~/.homebridge/
+</code></pre>
+<p>再用Xcode打开config.json文件，并输入</p>
 <pre><code>{
     &quot;bridge&quot;: {
         &quot;name&quot;: &quot;HomeBridge&quot;,
@@ -50,11 +57,59 @@ vi config.json
 }
 </code></pre>
 <h3 id="step-5-运行homebridge">Step 5. 运行HomeBridge</h3>
-<p>在终端中输入</p>
+<p>在terminal(终端)中输入</p>
 <pre><code>homebridge
 </code></pre>
 <p>正常情况下你将会看到一个二维码，但如果后面还有一堆红色文字，那么就是你的端口被占用了，更改config文件中的port即可。<br>
-<font color=#FF0000>※ 想要停止HomeBridge可以直接关掉终端，或者是按ctrl + c。</font></p>
+<font color=#FF0000>※ 想要停止HomeBridge可以直接关掉终端，或者是按ctrl + c。</font><br>
+最后用手机/iPad上的家庭app扫描二维码即可。</p>
+<hr>
+<h2 id="二接入米家设备">二.接入米家设备</h2>
+<h3 id="1-接入yeelight灯泡台灯">1. 接入Yeelight灯泡/台灯</h3>
+<h4 id="step-1-安装homebridge-yeelight插件">Step 1. 安装homebridge-yeelight插件</h4>
+<p>在terminal(终端)中输入</p>
+<pre><code>sudo npm -g install homebridge-yeelight
+</code></pre>
+<h4 id="step-2-修改config文件">Step 2. 修改config文件</h4>
+<p>在访达&gt;「前往」&gt;「前往文件夹」，输入路径</p>
+<pre><code>~/.homebridge/
+</code></pre>
+<p>再用Xcode打开config.json文件，并用以下代码覆盖内容(注意端口)</p>
+<pre><code>{
+    &quot;bridge&quot;: {
+        &quot;name&quot;: &quot;HomeBridge&quot;,
+        &quot;username&quot;: &quot;B8:27:EB:EE:AF:1B&quot;,
+        &quot;port&quot;: 54642,
+        &quot;pin&quot;: &quot;031-45-154&quot;
+    },
+
+    &quot;platforms&quot;: [
+    	{
+            &quot;platform&quot; : &quot;yeelight&quot;,
+            &quot;name&quot; : &quot;yeelight&quot;
+    	}
+    ]
+}
+</code></pre>
+<h4 id="step-3-运行homebridge">Step 3. 运行HomeBridge</h4>
+<p>在terminal(终端)中输入</p>
+<pre><code>homebridge
+</code></pre>
+<p>我们应该已经可以看到[yeelight]的消息了(如下图)<br>
+<img src="https://binghan1227.github.io/post-images/1585095109986.png" alt="" loading="lazy"></p>
+<h4 id="step-4-开启yeelight权限">Step 4. 开启Yeelight权限</h4>
+<p>就算装了homebridge-yeelight插件，也不一定可以完全的控制Yeelight的设备，所以我们要开启权限，让HomeBridge可以完全的控制Yeelight设备。</p>
+<h5 id="1下载yeelight-app">(1)下载Yeelight app</h5>
+<p>在App Store中搜索并下载即可</p>
+<h5 id="2打开局域网控制">(2)打开局域网控制</h5>
+<p>在Yeelight app中选择你的设备，点击三角形的图标<br>
+<img src="https://binghan1227.github.io/post-images/1585095656804.jpeg" alt="" loading="lazy"><br>
+点击「局域网控制」<br>
+<img src="https://binghan1227.github.io/post-images/1585095709714.jpeg" alt="" loading="lazy"><br>
+打开「局域网控制」开关<br>
+<img src="https://binghan1227.github.io/post-images/1585095745583.jpeg" alt="" loading="lazy"><br>
+将你所有的Yeelight设备都打开「局域网控制」，就可以在你的家庭app中查看并控制它们了。</p>
+<hr>
 ]]></content>
     </entry>
     <entry>
