@@ -90,7 +90,7 @@ Step 1. 安装 Xco...">
 <p>在<a href="http://nodejs.cn">官网</a>中下载安装。</p>
 <h3 id="step-3-安装homebridge">Step 3. 安装HomeBridge</h3>
 <p>在terminal(终端)中输入</p>
-<pre><code>sudo npm -g install homebridge
+<pre><code class="language-dos">sudo npm -g install homebridge
 </code></pre>
 <h3 id="step-4-创建并编辑config文件">Step 4. 创建并编辑config文件</h3>
 <blockquote>
@@ -98,15 +98,15 @@ Step 1. 安装 Xco...">
 </blockquote>
 <h4 id="1-创建文件">(1) 创建文件</h4>
 <p>在terminal(终端)中输入</p>
-<pre><code>cd ~/.homebridge/
+<pre><code class="language-dos">cd ~/.homebridge/
 vi config.json
 </code></pre>
 <h4 id="2-编辑文件">(2) 编辑文件</h4>
 <p>在访达&gt;「前往」&gt;「前往文件夹」，输入路径</p>
-<pre><code>~/.homebridge/
+<pre><code class="language-dos">~/.homebridge/
 </code></pre>
 <p>再用Xcode打开config.json文件，并输入</p>
-<pre><code>{
+<pre><code class="language-json">{
     &quot;bridge&quot;: {
         &quot;name&quot;: &quot;HomeBridge&quot;,
         &quot;username&quot;: &quot;B8:27:EB:EE:AF:1B&quot;,
@@ -117,7 +117,7 @@ vi config.json
 </code></pre>
 <h3 id="step-5-运行homebridge">Step 5. 运行HomeBridge</h3>
 <p>在terminal(终端)中输入</p>
-<pre><code>homebridge
+<pre><code class="language-dos">homebridge
 </code></pre>
 <p>正常情况下你将会看到一个二维码，但如果后面还有一堆红色文字，那么就是你的端口被占用了，更改config文件中的port即可。<br>
 <font color=#FF0000>※ 想要停止HomeBridge可以直接关掉终端，或者是按ctrl + c。</font><br>
@@ -127,14 +127,14 @@ vi config.json
 <h3 id="1-接入yeelight灯泡台灯">1. 接入Yeelight灯泡/台灯</h3>
 <h4 id="step-1-安装homebridge-yeelight插件">Step 1. 安装homebridge-yeelight插件</h4>
 <p>在terminal(终端)中输入</p>
-<pre><code>sudo npm -g install homebridge-yeelight
+<pre><code class="language-dos">sudo npm -g install homebridge-yeelight
 </code></pre>
 <h4 id="step-2-修改config文件">Step 2. 修改config文件</h4>
 <p>在访达&gt;「前往」&gt;「前往文件夹」，输入路径</p>
-<pre><code>~/.homebridge/
+<pre><code class="language-dos">~/.homebridge/
 </code></pre>
 <p>再用Xcode打开config.json文件，并用以下代码覆盖内容(注意端口)</p>
-<pre><code>{
+<pre><code class="language-json">{
     &quot;bridge&quot;: {
         &quot;name&quot;: &quot;HomeBridge&quot;,
         &quot;username&quot;: &quot;B8:27:EB:EE:AF:1B&quot;,
@@ -152,7 +152,7 @@ vi config.json
 </code></pre>
 <h4 id="step-3-运行homebridge">Step 3. 运行HomeBridge</h4>
 <p>在terminal(终端)中输入</p>
-<pre><code>homebridge
+<pre><code class="language-dos">homebridge
 </code></pre>
 <p>我们应该已经可以看到[yeelight]的消息了(如下图)<br>
 <img src="https://binghan1227.github.io/post-images/1585095109986.png" alt="" loading="lazy"></p>
@@ -172,7 +172,7 @@ vi config.json
 <h3 id="2-接入米家智能插座wifi版">2. 接入米家智能插座WiFi版</h3>
 <h4 id="step-1-安装homebridge-mi-outlet插件">Step 1. 安装homebridge-mi-outlet插件</h4>
 <p>在terminal(终端)中输入</p>
-<pre><code>sudo npm -g install homebridge-mi-outlet
+<pre><code class="language-dos">sudo npm -g install homebridge-mi-outlet
 </code></pre>
 <h4 id="step-2-获取设备token">Step 2. 获取设备Token</h4>
 <blockquote>
@@ -193,10 +193,10 @@ vi config.json
 <img src="https://binghan1227.github.io/post-images/1585107151723.jpeg" alt="" loading="lazy"></p>
 <h4 id="step-3-修改config文件">Step 3. 修改config文件</h4>
 <p>在访达&gt;「前往」&gt;「前往文件夹」，输入路径</p>
-<pre><code>~/.homebridge/
+<pre><code class="language-dos">~/.homebridge/
 </code></pre>
 <p>再用Xcode打开config.json文件，并用以下代码覆盖内容(注意端口)</p>
-<pre><code>{
+<pre><code class="language-json">{
     &quot;bridge&quot;: {
         &quot;name&quot;: &quot;HomeBridge&quot;,
         &quot;username&quot;: &quot;B8:27:EB:EE:AF:1B&quot;,
@@ -222,7 +222,7 @@ vi config.json
 </code></pre>
 <p>将上面的「ip」与「token」替换为之前记录的即可。<br>
 <font color=#FF0000>※ 多个设备时只修改&quot;platforms&quot;(注意逗号)，如我的config文件为</font></p>
-<pre><code>{
+<pre><code class="language-json">{
     &quot;bridge&quot;: {
         &quot;name&quot;: &quot;HomeBridge&quot;,
         &quot;username&quot;: &quot;B8:27:EB:EE:AF:1B&quot;,
@@ -252,7 +252,7 @@ vi config.json
 </code></pre>
 <h4 id="step-4-运行homebridge">Step 4. 运行HomeBridge</h4>
 <p>在terminal(终端)中输入</p>
-<pre><code>homebridge
+<pre><code class="language-dos">homebridge
 </code></pre>
 <p>如果一起正常，你将在家庭app中发现三个设备，分别为「总开关」「指示灯开关」和「温度」，可以自行替换备注。</p>
 <hr class="footnotes-sep">
