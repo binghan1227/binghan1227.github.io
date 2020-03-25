@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://binghan1227.github.io</id>
     <title>binghan1227</title>
-    <updated>2020-03-25T03:46:08.778Z</updated>
+    <updated>2020-03-25T03:49:16.956Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://binghan1227.github.io"/>
     <link rel="self" href="https://binghan1227.github.io/atom.xml"/>
@@ -132,7 +132,7 @@ vi config.json
 <img src="https://binghan1227.github.io/post-images/1585107034324.jpeg" alt="" loading="lazy"><br>
 在消息体中找到设备的「ip」、「token」(见下图)，记录下来。<br>
 <img src="https://binghan1227.github.io/post-images/1585107151723.jpeg" alt="" loading="lazy"></p>
-<h4 id="step-3-step-2-修改config文件">Step 3. Step 2. 修改config文件</h4>
+<h4 id="step-3-修改config文件">Step 3. 修改config文件</h4>
 <p>在访达&gt;「前往」&gt;「前往文件夹」，输入路径</p>
 <pre><code>~/.homebridge/
 </code></pre>
@@ -190,6 +190,10 @@ vi config.json
             }]
       }]
 }
+</code></pre>
+<h4 id="step-4-运行homebridge">Step 4. 运行HomeBridge</h4>
+<p>在terminal(终端)中输入</p>
+<pre><code>homebridge
 </code></pre>
 <p>如果一起正常，你将在家庭app中发现三个设备，分别为「总开关」「指示灯开关」和「温度」，可以自行替换备注。</p>
 <hr class="footnotes-sep">
