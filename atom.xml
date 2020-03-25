@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://binghan1227.github.io</id>
     <title>binghan1227</title>
-    <updated>2020-03-25T01:05:35.094Z</updated>
+    <updated>2020-03-25T03:46:08.778Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://binghan1227.github.io"/>
     <link rel="self" href="https://binghan1227.github.io/atom.xml"/>
@@ -110,6 +110,95 @@ vi config.json
 <img src="https://binghan1227.github.io/post-images/1585095745583.jpeg" alt="" loading="lazy"><br>
 将你所有的Yeelight设备都打开「局域网控制」，就可以在你的家庭app中查看并控制它们了。</p>
 <hr>
+<h3 id="2-接入米家智能插座wifi版">2. 接入米家智能插座WiFi版</h3>
+<h4 id="step-1-安装homebridge-mi-outlet插件">Step 1. 安装homebridge-mi-outlet插件</h4>
+<p>在terminal(终端)中输入</p>
+<pre><code>sudo npm -g install homebridge-mi-outlet
+</code></pre>
+<h4 id="step-2-获取设备token">Step 2. 获取设备Token</h4>
+<blockquote>
+<p>此步较为麻烦，在此只提供一种方法，其他方法可自行百度。</p>
+</blockquote>
+<h5 id="1下载thor或其他抓包应用">(1)下载Thor或其他抓包应用</h5>
+<p>在App Store中搜索并下载即可</p>
+<h5 id="2开始抓包">(2)开始抓包</h5>
+<p>如图(不同应用可能有区别，如果使用Thor可以使用我的过滤器 <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>)<br>
+<img src="https://binghan1227.github.io/post-images/1585106571710.jpeg" alt="" loading="lazy"></p>
+<h5 id="3打开米家app">(3)打开米家app</h5>
+<p>如图，如果不放心可以打开再关闭设备一次。<br>
+<img src="https://binghan1227.github.io/post-images/1585106629395.jpeg" alt="" loading="lazy"></p>
+<h5 id="4获取token">(4)获取Token</h5>
+<p>打开Thor，找到名为「device_list_page」的文件，选择「响应」，点击「txt」。<br>
+<img src="https://binghan1227.github.io/post-images/1585107034324.jpeg" alt="" loading="lazy"><br>
+在消息体中找到设备的「ip」、「token」(见下图)，记录下来。<br>
+<img src="https://binghan1227.github.io/post-images/1585107151723.jpeg" alt="" loading="lazy"></p>
+<h4 id="step-3-step-2-修改config文件">Step 3. Step 2. 修改config文件</h4>
+<p>在访达&gt;「前往」&gt;「前往文件夹」，输入路径</p>
+<pre><code>~/.homebridge/
+</code></pre>
+<p>再用Xcode打开config.json文件，并用以下代码覆盖内容(注意端口)</p>
+<pre><code>{
+    &quot;bridge&quot;: {
+        &quot;name&quot;: &quot;HomeBridge&quot;,
+        &quot;username&quot;: &quot;B8:27:EB:EE:AF:1B&quot;,
+        &quot;port&quot;: 54642,
+        &quot;pin&quot;: &quot;031-45-154&quot;
+    },
+
+    &quot;platforms&quot;: [{
+    &quot;platform&quot;: &quot;MiOutletPlatform&quot;,
+    &quot;deviceCfgs&quot;: [{
+        &quot;type&quot;: &quot;MiPlugBase&quot;,
+        &quot;ip&quot;: &quot;192.168.xx.xx&quot;,
+        &quot;token&quot;: &quot;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;,
+        &quot;outletName&quot;: &quot;living room outlet&quot;,
+        &quot;outletDisable&quot;: false,
+        &quot;temperatureName&quot;: &quot;living room outlet temperature&quot;,
+        &quot;temperatureDisable&quot;: false,
+        &quot;switchLEDName&quot;: &quot;living room led light switch&quot;,
+        &quot;switchLEDDisable&quot;: false
+        }]
+    }]
+}
+</code></pre>
+<p>将上面的「ip」与「token」替换为之前记录的即可。<br>
+<font color=#FF0000>※ 多个设备时只修改&quot;platforms&quot;(注意逗号)，如我的config文件为</font></p>
+<pre><code>{
+    &quot;bridge&quot;: {
+        &quot;name&quot;: &quot;HomeBridge&quot;,
+        &quot;username&quot;: &quot;B8:27:EB:EE:AF:1B&quot;,
+        &quot;port&quot;: 52523,
+        &quot;pin&quot;: &quot;031-45-154&quot;
+    },
+
+    &quot;platforms&quot;: [
+        {
+            &quot;platform&quot; : &quot;yeelight&quot;,
+            &quot;name&quot; : &quot;yeelight&quot;
+        },{
+            &quot;platform&quot;: &quot;MiOutletPlatform&quot;,
+            &quot;deviceCfgs&quot;: [{
+                &quot;type&quot;: &quot;MiPlugBase&quot;,
+                &quot;ip&quot;: &quot;192.168.xx.xx&quot;,
+                &quot;token&quot;: &quot;xxxxxxxxxxxxxxxxxxxxxdc075eed4a7&quot;,
+                &quot;outletName&quot;: &quot;living room outlet&quot;,
+                &quot;outletDisable&quot;: false,
+                &quot;temperatureName&quot;: &quot;living room outlet temperature&quot;,
+                &quot;temperatureDisable&quot;: false,
+                &quot;switchLEDName&quot;: &quot;living room led light switch&quot;,
+                &quot;switchLEDDisable&quot;: false
+            }]
+      }]
+}
+</code></pre>
+<p>如果一起正常，你将在家庭app中发现三个设备，分别为「总开关」「指示灯开关」和「温度」，可以自行替换备注。</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>链接：https://pan.baidu.com/s/1Nng4uC2UVB1gxEhZwgRIvA 提取码：61B6 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 ]]></content>
     </entry>
     <entry>
