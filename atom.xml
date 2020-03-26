@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://binghan1227.github.io</id>
     <title>binghan1227</title>
-    <updated>2020-03-25T06:51:25.975Z</updated>
+    <updated>2020-03-26T05:52:25.486Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://binghan1227.github.io"/>
     <link rel="self" href="https://binghan1227.github.io/atom.xml"/>
@@ -17,28 +17,28 @@
         </link>
         <updated>2020-03-24T07:55:45.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
-<p>众所周知，原生支持homekit的智能设备普遍很贵，那么，便宜的米家设备就成为了智能家居的不二之选，如何将不支持homekit的设备接入米家呢？答案就是HomeBridge。</p>
+<p>众所周知，原生支持 homekit 的智能设备普遍很贵，那么，便宜的米家设备就成为了智能家居的不二之选，如何将不支持 homekit 的设备接入米家呢？答案就是 HomeBridge 。</p>
 </blockquote>
 ]]></summary>
         <content type="html"><![CDATA[<blockquote>
-<p>众所周知，原生支持homekit的智能设备普遍很贵，那么，便宜的米家设备就成为了智能家居的不二之选，如何将不支持homekit的设备接入米家呢？答案就是HomeBridge。</p>
+<p>众所周知，原生支持 homekit 的智能设备普遍很贵，那么，便宜的米家设备就成为了智能家居的不二之选，如何将不支持 homekit 的设备接入米家呢？答案就是 HomeBridge 。</p>
 </blockquote>
 <!-- more -->
-<h2 id="一安装homebridge">一.安装HomeBridge</h2>
+<h2 id="一安装-homebridge">一.安装 HomeBridge</h2>
 <h3 id="step-1-安装-xcode">Step 1. 安装 Xcode</h3>
-<p>在App Store中下载安装即可。</p>
+<p>在 App Store 中下载安装即可。</p>
 <h3 id="step-2-安装-nodejs">Step 2. 安装 Node.js</h3>
 <p>在<a href="http://nodejs.cn">官网</a>中下载安装。</p>
-<h3 id="step-3-安装homebridge">Step 3. 安装HomeBridge</h3>
-<p>在terminal(终端)中输入</p>
+<h3 id="step-3-安装-homebridge">Step 3. 安装 HomeBridge</h3>
+<p>在 terminal (终端)中输入</p>
 <pre><code class="language-dos">sudo npm -g install homebridge
 </code></pre>
-<h3 id="step-4-创建并编辑config文件">Step 4. 创建并编辑config文件</h3>
+<h3 id="step-4-创建并编辑-config-文件">Step 4. 创建并编辑 config 文件</h3>
 <blockquote>
-<p>在这步可以有多种选择，我更推荐使用Xcode来编辑。</p>
+<p>在这步可以有多种选择，我更推荐使用 Xcode 来编辑。</p>
 </blockquote>
 <h4 id="1-创建文件">(1) 创建文件</h4>
-<p>在terminal(终端)中输入</p>
+<p>在 terminal (终端)中输入</p>
 <pre><code class="language-dos">cd ~/.homebridge/
 vi config.json
 </code></pre>
@@ -46,7 +46,7 @@ vi config.json
 <p>在访达&gt;「前往」&gt;「前往文件夹」，输入路径</p>
 <pre><code class="language-dos">~/.homebridge/
 </code></pre>
-<p>再用Xcode打开config.json文件，并输入</p>
+<p>再用 Xcode 打开 config.json 文件，并输入</p>
 <pre><code class="language-json">{
     &quot;bridge&quot;: {
         &quot;name&quot;: &quot;HomeBridge&quot;,
@@ -56,25 +56,25 @@ vi config.json
     }
 }
 </code></pre>
-<h3 id="step-5-运行homebridge">Step 5. 运行HomeBridge</h3>
-<p>在terminal(终端)中输入</p>
+<h3 id="step-5-运行-homebridge">Step 5. 运行 HomeBridge</h3>
+<p>在 terminal (终端)中输入</p>
 <pre><code class="language-dos">homebridge
 </code></pre>
-<p>正常情况下你将会看到一个二维码，但如果后面还有一堆红色文字，那么就是你的端口被占用了，更改config文件中的port即可。<br>
-<font color=#FF0000>※ 想要停止HomeBridge可以直接关掉终端，或者是按ctrl + c。</font><br>
-最后用手机/iPad上的家庭app扫描二维码即可。</p>
+<p>正常情况下你将会看到一个二维码，但如果后面还有一堆红色文字，那么就是你的端口被占用了，更 config 文件中的 port 即可。<br>
+<font color=#FF0000>※ 想要停止 HomeBridge 可以直接关掉终端，或者是按 ctrl + c 。</font><br>
+最后 家庭app 扫描二维码即可。</p>
 <hr>
 <h2 id="二接入米家设备">二.接入米家设备</h2>
-<h3 id="1-接入yeelight灯泡台灯">1. 接入Yeelight灯泡/台灯</h3>
-<h4 id="step-1-安装homebridge-yeelight插件">Step 1. 安装homebridge-yeelight插件</h4>
-<p>在terminal(终端)中输入</p>
+<h3 id="1-接入-yeelight-设备">1. 接入 Yeelight 设备</h3>
+<h4 id="step-1-安装-homebridge-yeelight-插件">Step 1. 安装 homebridge-yeelight 插件</h4>
+<p>在 terminal (终端)中输入</p>
 <pre><code class="language-dos">sudo npm -g install homebridge-yeelight
 </code></pre>
-<h4 id="step-2-修改config文件">Step 2. 修改config文件</h4>
+<h4 id="step-2-修改-config-文件">Step 2. 修改 config 文件</h4>
 <p>在访达&gt;「前往」&gt;「前往文件夹」，输入路径</p>
 <pre><code class="language-dos">~/.homebridge/
 </code></pre>
-<p>再用Xcode打开config.json文件，并用以下代码覆盖内容(注意端口)</p>
+<p>再用 Xcode 打开 config.json 文件，并用以下代码覆盖内容(注意端口)</p>
 <pre><code class="language-json">{
     &quot;bridge&quot;: {
         &quot;name&quot;: &quot;HomeBridge&quot;,
@@ -91,44 +91,44 @@ vi config.json
     ]
 }
 </code></pre>
-<h4 id="step-3-运行homebridge">Step 3. 运行HomeBridge</h4>
-<p>在terminal(终端)中输入</p>
+<h4 id="step-3-运行-homebridge">Step 3. 运行 HomeBridge</h4>
+<p>在 terminal (终端)中输入</p>
 <pre><code class="language-dos">homebridge
 </code></pre>
 <p>我们应该已经可以看到[yeelight]的消息了(如下图)<br>
 <img src="https://binghan1227.github.io/post-images/1585095109986.png" alt="" loading="lazy"></p>
-<h4 id="step-4-开启yeelight权限">Step 4. 开启Yeelight权限</h4>
-<p>就算装了homebridge-yeelight插件，也不一定可以完全的控制Yeelight的设备，所以我们要开启权限，让HomeBridge可以完全的控制Yeelight设备。</p>
-<h5 id="1下载yeelight-app">(1)下载Yeelight app</h5>
-<p>在App Store中搜索并下载即可</p>
+<h4 id="step-4-开启-yeelight-权限">Step 4. 开启 Yeelight 权限</h4>
+<p>就算装了 homebridge-yeelight 插件，也不一定可以完全的控制 Yeelight 的设备，所以我们要开启权限，让 HomeBridge 可以完全的控制 Yeelight 设备。</p>
+<h5 id="1下载-yeelight-app">(1)下载 Yeelight app</h5>
+<p>在 App Store 中搜索并下载即可</p>
 <h5 id="2打开局域网控制">(2)打开局域网控制</h5>
-<p>在Yeelight app中选择你的设备，点击三角形的图标<br>
+<p>在 Yeelight app 中选择你的设备，点击三角形的图标<br>
 <img src="https://binghan1227.github.io/post-images/1585095656804.jpeg" alt="" loading="lazy"><br>
 点击「局域网控制」<br>
 <img src="https://binghan1227.github.io/post-images/1585095709714.jpeg" alt="" loading="lazy"><br>
 打开「局域网控制」开关<br>
 <img src="https://binghan1227.github.io/post-images/1585095745583.jpeg" alt="" loading="lazy"><br>
-将你所有的Yeelight设备都打开「局域网控制」，就可以在你的家庭app中查看并控制它们了。</p>
+将你所有的 Yeelight 设备都打开「局域网控制」，就可以在你的 家庭app 中查看并控制它们了。</p>
 <hr>
 <h3 id="2-接入米家智能插座wifi版">2. 接入米家智能插座WiFi版</h3>
-<h4 id="step-1-安装homebridge-mi-outlet插件">Step 1. 安装homebridge-mi-outlet插件</h4>
-<p>在terminal(终端)中输入</p>
+<h4 id="step-1-安装-homebridge-mi-outlet-插件">Step 1. 安装 homebridge-mi-outlet 插件</h4>
+<p>在 terminal (终端)中输入</p>
 <pre><code class="language-dos">sudo npm -g install homebridge-mi-outlet
 </code></pre>
-<h4 id="step-2-获取设备token">Step 2. 获取设备Token</h4>
+<h4 id="step-2-获取设备-token">Step 2. 获取设备 Token</h4>
 <blockquote>
 <p>此步较为麻烦，在此只提供一种方法，其他方法可自行百度。</p>
 </blockquote>
-<h5 id="1下载thor或其他抓包应用">(1)下载Thor或其他抓包应用</h5>
+<h5 id="1下载-thor-或其他抓包应用">(1)下载 Thor 或其他抓包应用</h5>
 <p>在App Store中搜索并下载即可</p>
 <h5 id="2开始抓包">(2)开始抓包</h5>
-<p>如图(不同应用可能有区别，如果使用Thor可以使用我的过滤器 <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>)<br>
+<p>如图(不同应用可能有区别，如果使用 Thor 可以使用我的过滤器 <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>)<br>
 <img src="https://binghan1227.github.io/post-images/1585106571710.jpeg" alt="" loading="lazy"></p>
 <h5 id="3打开米家app">(3)打开米家app</h5>
 <p>如图，如果不放心可以打开再关闭设备一次。<br>
 <img src="https://binghan1227.github.io/post-images/1585106629395.jpeg" alt="" loading="lazy"></p>
-<h5 id="4获取token">(4)获取Token</h5>
-<p>打开Thor，找到名为「device_list_page」的文件，选择「响应」，点击「txt」。<br>
+<h5 id="4获取-token">(4)获取 Token</h5>
+<p>打开 Thor(或其他抓包应用)，找到名为「device_list_page」的文件，选择「响应」，点击「txt」。<br>
 <img src="https://binghan1227.github.io/post-images/1585107034324.jpeg" alt="" loading="lazy"><br>
 在消息体中找到设备的「ip」、「token」(见下图)，记录下来。<br>
 <img src="https://binghan1227.github.io/post-images/1585107151723.jpeg" alt="" loading="lazy"></p>
@@ -136,7 +136,7 @@ vi config.json
 <p>在访达&gt;「前往」&gt;「前往文件夹」，输入路径</p>
 <pre><code class="language-dos">~/.homebridge/
 </code></pre>
-<p>再用Xcode打开config.json文件，并用以下代码覆盖内容(注意端口)</p>
+<p>再用 Xcode 打开 config.json 文件，并用以下代码覆盖内容(注意端口)</p>
 <pre><code class="language-json">{
     &quot;bridge&quot;: {
         &quot;name&quot;: &quot;HomeBridge&quot;,
@@ -161,13 +161,13 @@ vi config.json
     }]
 }
 </code></pre>
-<p>将上面的「ip」与「token」替换为之前记录的即可。<br>
-<font color=#FF0000>※ 多个设备时只修改&quot;platforms&quot;(注意逗号)，如我的config文件为</font></p>
+<p>将上面的 &quot;ip&quot; 与 &quot;token&quot; 替换为之前记录的即可。<br>
+<font color=#FF0000>※ 多个设备时只修改 &quot;platforms&quot; (注意逗号)，如我的 config 文件为</font></p>
 <pre><code class="language-json">{
     &quot;bridge&quot;: {
         &quot;name&quot;: &quot;HomeBridge&quot;,
         &quot;username&quot;: &quot;B8:27:EB:EE:AF:1B&quot;,
-        &quot;port&quot;: 52523,
+        &quot;port&quot;: 54642,
         &quot;pin&quot;: &quot;031-45-154&quot;
     },
 
@@ -191,11 +191,11 @@ vi config.json
       }]
 }
 </code></pre>
-<h4 id="step-4-运行homebridge">Step 4. 运行HomeBridge</h4>
-<p>在terminal(终端)中输入</p>
+<h4 id="step-4-运行-homebridge">Step 4. 运行 HomeBridge</h4>
+<p>在 terminal (终端)中输入</p>
 <pre><code class="language-dos">homebridge
 </code></pre>
-<p>如果一起正常，你将在家庭app中发现三个设备，分别为「总开关」「指示灯开关」和「温度」，可以自行替换备注。</p>
+<p>如果一起正常，你将在 家庭app 中发现三个设备，分别为「总开关」「指示灯开关」和「温度」，可以自行替换备注。</p>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
