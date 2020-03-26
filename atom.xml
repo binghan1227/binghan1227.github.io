@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://binghan1227.github.io</id>
     <title>binghan1227</title>
-    <updated>2020-03-26T06:21:09.174Z</updated>
+    <updated>2020-03-26T06:24:50.334Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://binghan1227.github.io"/>
     <link rel="self" href="https://binghan1227.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://binghan1227.github.io/images/avatar.png</logo>
     <icon>https://binghan1227.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, binghan1227</rights>
+    <entry>
+        <title type="html"><![CDATA[2020/3/26]]></title>
+        <id>https://binghan1227.github.io/post/2020326/</id>
+        <link href="https://binghan1227.github.io/post/2020326/">
+        </link>
+        <updated>2020-03-26T06:23:46.000Z</updated>
+        <content type="html"><![CDATA[<p>我，终于弄出评论系统了！！！！！！</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Mac+HomeBridge+米家=?]]></title>
         <id>https://binghan1227.github.io/post/homebridge/</id>
@@ -383,15 +392,6 @@ vi config.json
 <hr>
 <p>小小年纪的我就已经体会到被钉钉支配的恐惧了<br>
 markdown真好玩</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello World!]]></title>
-        <id>https://binghan1227.github.io/post/hello-world/</id>
-        <link href="https://binghan1227.github.io/post/hello-world/">
-        </link>
-        <updated>2020-03-04T04:21:24.000Z</updated>
-        <content type="html"><![CDATA[<p>有点小激动，我也是有bolg的人了<s>哈哈哈哈哈哈</s></p>
 ]]></content>
     </entry>
 </feed>
