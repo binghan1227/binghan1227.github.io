@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://binghan1227.github.io</id>
     <title>binghan1227</title>
-    <updated>2020-03-28T05:21:28.562Z</updated>
+    <updated>2020-03-30T07:09:10.973Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://binghan1227.github.io"/>
     <link rel="self" href="https://binghan1227.github.io/atom.xml"/>
@@ -11,7 +11,16 @@
     <icon>https://binghan1227.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, binghan1227</rights>
     <entry>
-        <title type="html"><![CDATA[git的使用]]></title>
+        <title type="html"><![CDATA[2020/3/30]]></title>
+        <id>https://binghan1227.github.io/post/2020330/</id>
+        <link href="https://binghan1227.github.io/post/2020330/">
+        </link>
+        <updated>2020-03-30T07:08:20.000Z</updated>
+        <content type="html"><![CDATA[<p>emmmmmm。。。“零起点”教学？？？？？？那我的网课白上啦？？？？？？？？？</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Git的使用]]></title>
         <id>https://binghan1227.github.io/post/git/</id>
         <link href="https://binghan1227.github.io/post/git/">
         </link>
@@ -19,6 +28,11 @@
         <content type="html"><![CDATA[<blockquote>
 <p>Git（读音为/gɪt/）是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</p>
 </blockquote>
+<h2 id="git-的下载与安装">Git 的下载与安装</h2>
+<p>可以到<a href="https://git-scm.com/downloads">官网</a>查看并下载对应版本的客户端。</p>
+<h2 id="git-的创建仓库">Git 的创建仓库</h2>
+<h3 id="1">(1)</h3>
+<h3 id="2">(2)</h3>
 ]]></content>
     </entry>
     <entry>
@@ -372,21 +386,6 @@ vi config.json
         <content type="html"><![CDATA[<p>不知不觉，就到了星期五，明天又要上新东方了😫</p>
 <hr>
 <p>三体的广播剧真好听呢，我吹爆！！！</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020/3/5]]></title>
-        <id>https://binghan1227.github.io/post/202035/</id>
-        <link href="https://binghan1227.github.io/post/202035/">
-        </link>
-        <updated>2020-03-05T02:59:28.000Z</updated>
-        <summary type="html"><![CDATA[<p>狗东这是怎么了，快递怎么那么快？？？</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>狗东这是怎么了，快递怎么那么快？？？</p>
-<!-- more -->
-<hr>
-<p>我今天好困啊<br>
-<s>肾虚有时是在过度劳累之后</s>(无端)</p>
 ]]></content>
     </entry>
 </feed>
