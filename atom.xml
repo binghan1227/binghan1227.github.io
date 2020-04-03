@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://binghan1227.github.io</id>
     <title>binghan1227</title>
-    <updated>2020-03-30T07:09:10.973Z</updated>
+    <updated>2020-04-03T23:11:48.357Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://binghan1227.github.io"/>
     <link rel="self" href="https://binghan1227.github.io/atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>https://binghan1227.github.io/images/avatar.png</logo>
     <icon>https://binghan1227.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, binghan1227</rights>
+    <entry>
+        <title type="html"><![CDATA[2020/4/4]]></title>
+        <id>https://binghan1227.github.io/post/202044/</id>
+        <link href="https://binghan1227.github.io/post/202044/">
+        </link>
+        <updated>2020-04-03T23:02:10.000Z</updated>
+        <content type="html"><![CDATA[<p>今天是清明节，一觉醒来，都变成黑白的了呢。<br>
+<img src="https://binghan1227.github.io/post-images/1585955390065.jpeg" alt="" loading="lazy"><br>
+<img src="https://binghan1227.github.io/post-images/1585955398224.jpeg" alt="" loading="lazy"><br>
+<img src="https://binghan1227.github.io/post-images/1585955404486.jpeg" alt="" loading="lazy"><br>
+<img src="https://binghan1227.github.io/post-images/1585955412749.jpeg" alt="" loading="lazy"><br>
+<img src="https://binghan1227.github.io/post-images/1585955433259.jpeg" alt="" loading="lazy"><br>
+<img src="https://binghan1227.github.io/post-images/1585955437583.jpeg" alt="" loading="lazy"><br>
+向英雄们致敬！🕯🕯🕯</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020/3/30]]></title>
         <id>https://binghan1227.github.io/post/2020330/</id>
@@ -375,17 +391,6 @@ vi config.json
 </li>
 </ol>
 </section>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020/3/6]]></title>
-        <id>https://binghan1227.github.io/post/202036/</id>
-        <link href="https://binghan1227.github.io/post/202036/">
-        </link>
-        <updated>2020-03-06T03:36:56.000Z</updated>
-        <content type="html"><![CDATA[<p>不知不觉，就到了星期五，明天又要上新东方了😫</p>
-<hr>
-<p>三体的广播剧真好听呢，我吹爆！！！</p>
 ]]></content>
     </entry>
 </feed>
