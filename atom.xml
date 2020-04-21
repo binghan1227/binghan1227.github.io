@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://binghan1227.github.io</id>
     <title>binghan1227</title>
-    <updated>2020-04-19T08:36:14.911Z</updated>
+    <updated>2020-04-21T05:09:14.261Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://binghan1227.github.io"/>
     <link rel="self" href="https://binghan1227.github.io/atom.xml"/>
@@ -50,10 +50,7 @@
         <link href="https://binghan1227.github.io/post/git/">
         </link>
         <updated>2020-03-28T05:20:32.000Z</updated>
-        <content type="html"><![CDATA[<blockquote>
-<p>Git（读音为/gɪt/）是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</p>
-</blockquote>
-<h2 id="git-的下载与安装">Git 的下载与安装</h2>
+        <content type="html"><![CDATA[<h2 id="git-的下载与安装">Git 的下载与安装</h2>
 <p>可以到<a href="https://git-scm.com/downloads">官网</a>查看并下载对应版本的客户端。</p>
 <h2 id="git-的创建仓库">Git 的创建仓库</h2>
 <h3 id="1">(1)</h3>
