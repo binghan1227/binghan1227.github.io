@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://binghan1227.github.io</id>
     <title>binghan1227</title>
-    <updated>2020-04-21T05:10:47.084Z</updated>
+    <updated>2020-05-03T00:09:54.141Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://binghan1227.github.io"/>
     <link rel="self" href="https://binghan1227.github.io/atom.xml"/>
@@ -10,6 +10,16 @@
     <logo>https://binghan1227.github.io/images/avatar.png</logo>
     <icon>https://binghan1227.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, binghan1227</rights>
+    <entry>
+        <title type="html"><![CDATA[2020/5/3]]></title>
+        <id>https://binghan1227.github.io/post/202053/</id>
+        <link href="https://binghan1227.github.io/post/202053/">
+        </link>
+        <updated>2020-05-03T00:08:59.000Z</updated>
+        <content type="html"><![CDATA[<p>cl一生推<br>
+<img src="https://binghan1227.github.io/post-images/1588464560379.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020/4/19]]></title>
         <id>https://binghan1227.github.io/post/2020419/</id>
@@ -299,25 +309,6 @@ vi config.json
 <!-- more -->
 <hr>
 <p>好吧，我现在很高兴，因为我把智能插座弄到homekit上了</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020/3/7]]></title>
-        <id>https://binghan1227.github.io/post/202037/</id>
-        <link href="https://binghan1227.github.io/post/202037/">
-        </link>
-        <updated>2020-03-07T09:14:14.000Z</updated>
-        <summary type="html"><![CDATA[<p>emmmmm....讲个笑话，CCF的服务器被人攻击了...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>emmmmm....讲个笑话，CCF的服务器被人攻击了...</p>
-<!-- more -->
-<p>我要炸了，NOI Online怎么也上不去啊！！！</p>
-<hr>
-<p>服务器又双叒叕炸了。。。算了，不打了，累了🙄<br>
-<s>CCF真棒</s></p>
-<hr>
-<p><img src="https://binghan1227.github.io/post-images/1583623477190.jpeg" alt="" loading="lazy"><br>
-这都到23点了，emmmmmmmmm...</p>
 ]]></content>
     </entry>
 </feed>
