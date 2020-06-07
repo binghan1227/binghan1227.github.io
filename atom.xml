@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://binghan1227.github.io</id>
     <title>binghan1227</title>
-    <updated>2020-05-03T00:09:54.141Z</updated>
+    <updated>2020-06-07T12:59:53.376Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://binghan1227.github.io"/>
     <link rel="self" href="https://binghan1227.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://binghan1227.github.io/images/avatar.png</logo>
     <icon>https://binghan1227.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, binghan1227</rights>
+    <entry>
+        <title type="html"><![CDATA[2020/6/7]]></title>
+        <id>https://binghan1227.github.io/post/202067/</id>
+        <link href="https://binghan1227.github.io/post/202067/">
+        </link>
+        <updated>2020-06-07T12:58:46.000Z</updated>
+        <content type="html"><![CDATA[<p>小米万能遥控器接入 homebridge 好难啊啊啊啊！！！！！暑假有事干了。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020/5/3]]></title>
         <id>https://binghan1227.github.io/post/202053/</id>
@@ -83,11 +92,11 @@
         </link>
         <updated>2020-03-24T07:55:45.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
-<p>众所周知，原生支持 homekit 的智能设备普遍很贵，那么，便宜的米家设备就成为了智能家居的不二之选，如何将不支持 homekit 的设备接入米家呢？答案就是 HomeBridge 。</p>
+<p>众所周知，原生支持 homekit 的智能设备普遍很贵，那么，便宜的米家设备就成为了智能家居的不二之选，如何将不支持 homekit 的设备接入 homekit 呢？答案就是 HomeBridge 。</p>
 </blockquote>
 ]]></summary>
         <content type="html"><![CDATA[<blockquote>
-<p>众所周知，原生支持 homekit 的智能设备普遍很贵，那么，便宜的米家设备就成为了智能家居的不二之选，如何将不支持 homekit 的设备接入米家呢？答案就是 HomeBridge 。</p>
+<p>众所周知，原生支持 homekit 的智能设备普遍很贵，那么，便宜的米家设备就成为了智能家居的不二之选，如何将不支持 homekit 的设备接入 homekit 呢？答案就是 HomeBridge 。</p>
 </blockquote>
 <!-- more -->
 <h2 id="一安装-homebridge">一.安装 HomeBridge</h2>
@@ -295,20 +304,6 @@ vi config.json
         <content type="html"><![CDATA[<p>哈，今天我把网页链接到了Google Analytics里了</p>
 <!-- more -->
 <p>以后我就能看见是谁<s>在敲打我窗</s>来看我的博客了</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020/3/8]]></title>
-        <id>https://binghan1227.github.io/post/202038/</id>
-        <link href="https://binghan1227.github.io/post/202038/">
-        </link>
-        <updated>2020-03-07T23:25:16.000Z</updated>
-        <summary type="html"><![CDATA[<p>😭😭😭洛谷上测，那唯一交上去的一题还只有20分，555555555555</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>😭😭😭洛谷上测，那唯一交上去的一题还只有20分，555555555555</p>
-<!-- more -->
-<hr>
-<p>好吧，我现在很高兴，因为我把智能插座弄到homekit上了</p>
 ]]></content>
     </entry>
 </feed>
