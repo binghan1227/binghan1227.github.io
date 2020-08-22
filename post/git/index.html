@@ -108,7 +108,7 @@ git add .
 <p>在文件夹中执行</p>
 <pre><code class="language-git">git init
 </code></pre>
-<h3 id="新建文件">新建文件</h3>
+<h2 id="新建文件">新建文件</h2>
 <p>我们可以使用</p>
 <pre><code class="language-git">git add &lt;filename&gt;
 </code></pre>
@@ -117,7 +117,7 @@ git add .
 <pre><code class="language-git">git add .
 </code></pre>
 <p>来添加所有文件。</p>
-<h3 id="提交版本">提交版本</h3>
+<h2 id="提交版本">提交版本</h2>
 <p>现在我们已经添加了这些文件，我们希望它们能够真正被保存在Git仓库。<br>
 为此，我们将它们提交到仓库。</p>
 <pre><code class="language-git">git commit -m &quot;Adding files&quot;
@@ -128,34 +128,34 @@ git add .
 </code></pre>
 <p>git commit 命令的-a选项可将所有被修改或者已删除的且已经被git管理的文档提交到仓库中。<br>
 <font color=#FF0000>※千万注意，-a不会造成新文件被提交，只能修改。</font></p>
-<h3 id="删除">删除</h3>
+<h2 id="删除">删除</h2>
 <p>如何你想从资源库中删除文件，可以使用</p>
 <pre><code class="language-git">git rm &lt;filename&gt;
 </code></pre>
-<h3 id="分支与合并">分支与合并</h3>
+<h2 id="分支与合并">分支与合并</h2>
 <p>几乎每一种版本控制系统都以某种形式支持分支。使用分支意味着你可以从开发主线上分离开来，然后在不影响主线的同时继续工作。<br>
 有人把 Git 的分支模型称为必杀技特性，而正是因为它，将 Git 从版本控制系统家族里区分出来。</p>
-<h4 id="创建分支">创建分支</h4>
+<h3 id="创建分支">创建分支</h3>
 <p>分支在本地完成，速度快。要创建一个新的分支，我们使用branch命令。</p>
 <pre><code class="language-git">git branch &lt;name&gt;
 </code></pre>
-<h4 id="切换分支">切换分支</h4>
+<h3 id="切换分支">切换分支</h3>
 <p>branch命令不会将我们带入分支，只是创建一个新分支。所以我们使用checkout命令来更改分支。</p>
 <pre><code class="language-git">git checkout &lt;name&gt;
 </code></pre>
 <p>第一个分支，或主分支，被称为&quot;master&quot;。</p>
 <pre><code class="language-git">git checkout master
 </code></pre>
-<h4 id="合并分支">合并分支</h4>
+<h3 id="合并分支">合并分支</h3>
 <p>对其他分支的更改不会反映在主分支上。如果想将更改提交到主分支，则需切换回master分支，然后使用合并。</p>
 <pre><code class="language-git">git checkout master
 git merge &lt;name&gt;
 </code></pre>
-<h4 id="删除分支">删除分支</h4>
+<h3 id="删除分支">删除分支</h3>
 <p>如果您想删除分支，我们使用-d标识。</p>
 <pre><code class="language-git">git branch -d &lt;name&gt;
 </code></pre>
-<h3 id="标签">标签</h3>
+<h2 id="标签">标签</h2>
 <p>为软件发布创建标签是推荐的。这个概念早已存在，在 SVN 中也有。你可以执行如下命令创建一个叫做 1.0.0 的标签：</p>
 <pre><code class="language-git">git tag 1.0.0 1b2e1d63ff
 </code></pre>
@@ -163,7 +163,7 @@ git merge &lt;name&gt;
 <pre><code class="language-git">git log
 </code></pre>
 <p>你也可以使用少一点的提交 ID 前几位，只要它的指向具有唯一性。</p>
-<h3 id="替换本地改动">替换本地改动</h3>
+<h2 id="替换本地改动">替换本地改动</h2>
 <p>假如你操作失误（当然，这最好永远不要发生），你可以使用如下命令替换掉本地改动：</p>
 <pre><code class="language-git">git checkout -- &lt;filename&gt;
 </code></pre>
@@ -212,8 +212,7 @@ git merge &lt;name&gt;
 <li>
 <ul>
 <li><a href="#git-%E7%9A%84%E4%B8%8B%E8%BD%BD%E4%B8%8E%E5%AE%89%E8%A3%85">Git 的下载与安装</a></li>
-<li><a href="#%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93">创建仓库</a>
-<ul>
+<li><a href="#%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93">创建仓库</a></li>
 <li><a href="#%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6">新建文件</a></li>
 <li><a href="#%E6%8F%90%E4%BA%A4%E7%89%88%E6%9C%AC">提交版本</a></li>
 <li><a href="#%E5%88%A0%E9%99%A4">删除</a></li>
@@ -227,8 +226,6 @@ git merge &lt;name&gt;
 </li>
 <li><a href="#%E6%A0%87%E7%AD%BE">标签</a></li>
 <li><a href="#%E6%9B%BF%E6%8D%A2%E6%9C%AC%E5%9C%B0%E6%94%B9%E5%8A%A8">替换本地改动</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
