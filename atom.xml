@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://binghan1227.github.io</id>
     <title>binghan1227</title>
-    <updated>2020-06-07T12:59:53.376Z</updated>
+    <updated>2020-08-22T00:49:47.429Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://binghan1227.github.io"/>
     <link rel="self" href="https://binghan1227.github.io/atom.xml"/>
@@ -10,59 +10,6 @@
     <logo>https://binghan1227.github.io/images/avatar.png</logo>
     <icon>https://binghan1227.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, binghan1227</rights>
-    <entry>
-        <title type="html"><![CDATA[2020/6/7]]></title>
-        <id>https://binghan1227.github.io/post/202067/</id>
-        <link href="https://binghan1227.github.io/post/202067/">
-        </link>
-        <updated>2020-06-07T12:58:46.000Z</updated>
-        <content type="html"><![CDATA[<p>小米万能遥控器接入 homebridge 好难啊啊啊啊！！！！！暑假有事干了。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020/5/3]]></title>
-        <id>https://binghan1227.github.io/post/202053/</id>
-        <link href="https://binghan1227.github.io/post/202053/">
-        </link>
-        <updated>2020-05-03T00:08:59.000Z</updated>
-        <content type="html"><![CDATA[<p>cl一生推<br>
-<img src="https://binghan1227.github.io/post-images/1588464560379.png" alt="" loading="lazy"></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020/4/19]]></title>
-        <id>https://binghan1227.github.io/post/2020419/</id>
-        <link href="https://binghan1227.github.io/post/2020419/">
-        </link>
-        <updated>2020-04-19T08:35:18.000Z</updated>
-        <content type="html"><![CDATA[<p>双休变单休，我好累啊啊啊啊啊啊！</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020/4/4]]></title>
-        <id>https://binghan1227.github.io/post/202044/</id>
-        <link href="https://binghan1227.github.io/post/202044/">
-        </link>
-        <updated>2020-04-03T23:02:10.000Z</updated>
-        <content type="html"><![CDATA[<p>今天是清明节，一觉醒来，都变成黑白的了呢。<br>
-<img src="https://binghan1227.github.io/post-images/1585955390065.jpeg" alt="" loading="lazy"><br>
-<img src="https://binghan1227.github.io/post-images/1585955398224.jpeg" alt="" loading="lazy"><br>
-<img src="https://binghan1227.github.io/post-images/1585955404486.jpeg" alt="" loading="lazy"><br>
-<img src="https://binghan1227.github.io/post-images/1585955412749.jpeg" alt="" loading="lazy"><br>
-<img src="https://binghan1227.github.io/post-images/1585955433259.jpeg" alt="" loading="lazy"><br>
-<img src="https://binghan1227.github.io/post-images/1585955437583.jpeg" alt="" loading="lazy"><br>
-向英雄们致敬！🕯🕯🕯</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020/3/30]]></title>
-        <id>https://binghan1227.github.io/post/2020330/</id>
-        <link href="https://binghan1227.github.io/post/2020330/">
-        </link>
-        <updated>2020-03-30T07:08:20.000Z</updated>
-        <content type="html"><![CDATA[<p>emmmmmm。。。“零起点”教学？？？？？？那我的网课白上啦？？？？？？？？？</p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Git的使用]]></title>
         <id>https://binghan1227.github.io/post/git/</id>
@@ -74,15 +21,6 @@
 <h2 id="git-的创建仓库">Git 的创建仓库</h2>
 <h3 id="1">(1)</h3>
 <h3 id="2">(2)</h3>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020/3/26]]></title>
-        <id>https://binghan1227.github.io/post/2020326/</id>
-        <link href="https://binghan1227.github.io/post/2020326/">
-        </link>
-        <updated>2020-03-26T06:23:46.000Z</updated>
-        <content type="html"><![CDATA[<p>我，终于弄出评论系统了！！！！！！</p>
 ]]></content>
     </entry>
     <entry>
@@ -281,29 +219,82 @@ vi config.json
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[2020/3/12]]></title>
-        <id>https://binghan1227.github.io/post/2020312/</id>
-        <link href="https://binghan1227.github.io/post/2020312/">
+        <title type="html"><![CDATA[Markdown]]></title>
+        <id>https://binghan1227.github.io/post/test/</id>
+        <link href="https://binghan1227.github.io/post/test/">
         </link>
-        <updated>2020-03-12T09:16:40.000Z</updated>
-        <summary type="html"><![CDATA[<p>哈，我终于赢了一局文明。我发现这是个核平的游戏。。。</p>
+        <updated>2020-03-06T03:59:24.000Z</updated>
+        <summary type="html"><![CDATA[<p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>哈，我终于赢了一局文明。我发现这是个核平的游戏。。。</p>
+        <content type="html"><![CDATA[<p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
 <!-- more -->
-<figure data-type="image" tabindex="1"><img src="https://binghan1227.github.io/post-images/1584004710544.jpeg" alt="" loading="lazy"></figure>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020/3/9]]></title>
-        <id>https://binghan1227.github.io/post/202039/</id>
-        <link href="https://binghan1227.github.io/post/202039/">
-        </link>
-        <updated>2020-03-09T08:08:56.000Z</updated>
-        <summary type="html"><![CDATA[<p>哈，今天我把网页链接到了Google Analytics里了</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>哈，今天我把网页链接到了Google Analytics里了</p>
-<!-- more -->
-<p>以后我就能看见是谁<s>在敲打我窗</s>来看我的博客了</p>
+<blockquote>
+<p>本文章只是测试网页Markdown的显示效果</p>
+</blockquote>
+<h1 id="一级标题">一级标题</h1>
+<h2 id="二级标题">二级标题</h2>
+<h3 id="三级标题">三级标题</h3>
+<h4 id="四级标题">四级标题</h4>
+<h5 id="五级标题">五级标题</h5>
+<h6 id="六级标题">六级标题</h6>
+<hr>
+<p><em>斜体文本</em><br>
+<strong>粗体文本</strong><br>
+<em><strong>粗斜体文本</strong></em><br>
+<s>删除</s><br>
+角标 <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+<ol>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ol>
+<blockquote>
+<p>套娃</p>
+<blockquote>
+<p>...</p>
+<blockquote>
+<p>禁止套娃</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<pre><code class="language-c++">cout&lt;&lt;&quot;Hello World!&quot;&lt;&lt;endl;
+</code></pre>
+<p><a href="https://binghan1227.github.io">首页链接</a><br>
+<img src="https://binghan1227.github.io/post-images/1583467725645.jpeg" alt="" loading="lazy"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">左对齐</th>
+<th style="text-align:right">右对齐</th>
+<th style="text-align:center">居中对齐</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">单元格</td>
+<td style="text-align:right">单元格</td>
+<td style="text-align:center">单元格</td>
+</tr>
+<tr>
+<td style="text-align:left">单元格</td>
+<td style="text-align:right">单元格</td>
+<td style="text-align:center">单元格</td>
+</tr>
+</tbody>
+</table>
+<p>使用 <kbd>F5</kbd> 刷新页面</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>角标测试 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 ]]></content>
     </entry>
 </feed>
