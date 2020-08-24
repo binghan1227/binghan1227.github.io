@@ -14,7 +14,8 @@
 
     
 
-  <meta name="description" content="Git 的下载与安装
+  <meta name="description" content="Git 的使用
+Git 的下载与安装
 可以到官网查看并下载对应版本的客户端。
 创建仓库
 在文件夹中执行
@@ -26,11 +27,10 @@ git add &amp;lt;filename&amp;gt;
 
 添加指定文件。
 或者使用
-git add .
-
-来添加所..." />
+git add..." />
   <meta property="og:title" content="Git 与 Github 的使用指北 - binghan1227">
-  <meta property="og:description" content="Git 的下载与安装
+  <meta property="og:description" content="Git 的使用
+Git 的下载与安装
 可以到官网查看并下载对应版本的客户端。
 创建仓库
 在文件夹中执行
@@ -42,16 +42,15 @@ git add &amp;lt;filename&amp;gt;
 
 添加指定文件。
 或者使用
-git add .
-
-来添加所..." />
+git add..." />
   <meta property="og:type" content="articles">
   <meta property="og:url" content="https://binghan1227.github.io/post/git/" />
   <meta property="og:image" content="https://binghan1227.github.io/post-images/git.png">
   <meta property="og:image:height" content="630">
   <meta property="og:image:width" content="1200">
   <meta name="twitter:title" content="Git 与 Github 的使用指北 - binghan1227">
-  <meta name="twitter:description" content="Git 的下载与安装
+  <meta name="twitter:description" content="Git 的使用
+Git 的下载与安装
 可以到官网查看并下载对应版本的客户端。
 创建仓库
 在文件夹中执行
@@ -63,9 +62,7 @@ git add &amp;lt;filename&amp;gt;
 
 添加指定文件。
 或者使用
-git add .
-
-来添加所...">
+git add...">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://binghan1227.github.io/post/git/">
 
@@ -93,7 +90,7 @@ git add .
           <img src="https://binghan1227.github.io/post-images/git.png" alt="Git 与 Github 的使用指北" class="block w-full mb-8">
         
         <div class="mb-8 flex flex-wrap">
-          <div class="text-gray-400 text-sm mr-4">2020-03-28 · 3 min read</div>
+          <div class="text-gray-400 text-sm mr-4">2020-03-28 · 4 min read</div>
           
             <a href="https://binghan1227.github.io/tag/1x17bu9Nd/" class="text-gray-700 text-sm border-b-2 border-dotted border-gray-200 hover:border-gray-600 transition-all duration-100 inline-flex mr-2">
               <i class="ri-hashtag"></i>
@@ -102,7 +99,8 @@ git add .
           
         </div>
         <div class="markdown mb-8" v-pre>
-          <h2 id="git-的下载与安装">Git 的下载与安装</h2>
+          <h1 id="git-的使用">Git 的使用</h1>
+<h2 id="git-的下载与安装">Git 的下载与安装</h2>
 <p>可以到<a href="https://git-scm.com/downloads">官网</a>查看并下载对应版本的客户端。</p>
 <h2 id="创建仓库">创建仓库</h2>
 <p>在文件夹中执行</p>
@@ -159,7 +157,7 @@ git merge &lt;name&gt;
 <p>为软件发布创建标签是推荐的。这个概念早已存在，在 SVN 中也有。你可以执行如下命令创建一个叫做 1.0.0 的标签：</p>
 <pre><code class="language-git">git tag 1.0.0 1b2e1d63ff
 </code></pre>
-<p>期中，1b2e1d63ff 是你想要标记的提交 ID 的前 10 位字符。可以使用下列命令获取提交 ID：</p>
+<p>其中，1b2e1d63ff 是你想要标记的提交 ID 的前 10 位字符。可以使用下列命令获取提交 ID：</p>
 <pre><code class="language-git">git log
 </code></pre>
 <p>你也可以使用少一点的提交 ID 前几位，只要它的指向具有唯一性。</p>
@@ -168,6 +166,30 @@ git merge &lt;name&gt;
 <pre><code class="language-git">git checkout -- &lt;filename&gt;
 </code></pre>
 <p>此命令会使用之前提交到仓库中的最新内容替换掉你的工作目录中的文件。已添加到暂存区的改动以及新文件都不会受到影响。</p>
+<!-- more -->
+<h1 id="github-的使用">Github 的使用</h1>
+<h2 id="注册">注册</h2>
+<p>打开 <a href="https://github.com">github.com</a> 在页面中输入用户名(Username)、邮箱(Email)、与密码(Password)，再点击注册(Sign up for GitHub)。</p>
+<h2 id="登录">登录</h2>
+<p>点击右上角的登录(Sign in)，输入用户名和密码，再点击登录(Sign in)即可。</p>
+<h2 id="新建远程仓库">新建远程仓库</h2>
+<p>点击右上角的加号，选择新仓库(New repository)，在接下来的页面输入仓库名(Repository name)、描述(Description)(可以不写)，选择公共(Public)或私有(Private)，是否自带README(Initialize this repository with a README)(之后会讲README的作用)，之后点击新建仓库(Creating repository)。</p>
+<h2 id="连接远程仓库">连接远程仓库</h2>
+<pre><code class="language-git">git remote add origin &lt;server&gt;
+</code></pre>
+<p>将 server 改成远程仓库的地址，如:</p>
+<pre><code class="language-http">https://github.com/xxxx/xxxx.git
+</code></pre>
+<p>如此你就能够将你的改动推送到远程仓库上去了。</p>
+<h2 id="推送改动">推送改动</h2>
+<p>执行如下命令以将本地仓库提交到远端仓库：</p>
+<pre><code class="language-git">git push origin master
+</code></pre>
+<p>可以把 master 换成你想要推送的任何分支。</p>
+<h2 id="更新改动">更新改动</h2>
+<p>要更新你的本地仓库至最新改动，执行：</p>
+<pre><code class="language-git">git pull
+</code></pre>
 
         </div>
         <!-- Share to Twitter, Weibo, Telegram -->
@@ -209,7 +231,7 @@ git merge &lt;name&gt;
       </div>
       <div class="post-toc-container">
         <ul class="markdownIt-TOC">
-<li>
+<li><a href="#git-%E7%9A%84%E4%BD%BF%E7%94%A8">Git 的使用</a>
 <ul>
 <li><a href="#git-%E7%9A%84%E4%B8%8B%E8%BD%BD%E4%B8%8E%E5%AE%89%E8%A3%85">Git 的下载与安装</a></li>
 <li><a href="#%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93">创建仓库</a></li>
@@ -226,6 +248,16 @@ git merge &lt;name&gt;
 </li>
 <li><a href="#%E6%A0%87%E7%AD%BE">标签</a></li>
 <li><a href="#%E6%9B%BF%E6%8D%A2%E6%9C%AC%E5%9C%B0%E6%94%B9%E5%8A%A8">替换本地改动</a></li>
+</ul>
+</li>
+<li><a href="#github-%E7%9A%84%E4%BD%BF%E7%94%A8">Github 的使用</a>
+<ul>
+<li><a href="#%E6%B3%A8%E5%86%8C">注册</a></li>
+<li><a href="#%E7%99%BB%E5%BD%95">登录</a></li>
+<li><a href="#%E6%96%B0%E5%BB%BA%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93">新建远程仓库</a></li>
+<li><a href="#%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93">连接远程仓库</a></li>
+<li><a href="#%E6%8E%A8%E9%80%81%E6%94%B9%E5%8A%A8">推送改动</a></li>
+<li><a href="#%E6%9B%B4%E6%96%B0%E6%94%B9%E5%8A%A8">更新改动</a></li>
 </ul>
 </li>
 </ul>

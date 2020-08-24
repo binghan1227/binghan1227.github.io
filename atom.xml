@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://binghan1227.github.io</id>
     <title>binghan1227</title>
-    <updated>2020-08-22T05:35:04.516Z</updated>
+    <updated>2020-08-24T05:25:37.125Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://binghan1227.github.io"/>
     <link rel="self" href="https://binghan1227.github.io/atom.xml"/>
@@ -16,7 +16,8 @@
         <link href="https://binghan1227.github.io/post/git/">
         </link>
         <updated>2020-03-28T05:20:32.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="git-的下载与安装">Git 的下载与安装</h2>
+        <summary type="html"><![CDATA[<h1 id="git-的使用">Git 的使用</h1>
+<h2 id="git-的下载与安装">Git 的下载与安装</h2>
 <p>可以到<a href="https://git-scm.com/downloads">官网</a>查看并下载对应版本的客户端。</p>
 <h2 id="创建仓库">创建仓库</h2>
 <p>在文件夹中执行</p>
@@ -73,7 +74,7 @@ git merge &lt;name&gt;
 <p>为软件发布创建标签是推荐的。这个概念早已存在，在 SVN 中也有。你可以执行如下命令创建一个叫做 1.0.0 的标签：</p>
 <pre><code class="language-git">git tag 1.0.0 1b2e1d63ff
 </code></pre>
-<p>期中，1b2e1d63ff 是你想要标记的提交 ID 的前 10 位字符。可以使用下列命令获取提交 ID：</p>
+<p>其中，1b2e1d63ff 是你想要标记的提交 ID 的前 10 位字符。可以使用下列命令获取提交 ID：</p>
 <pre><code class="language-git">git log
 </code></pre>
 <p>你也可以使用少一点的提交 ID 前几位，只要它的指向具有唯一性。</p>
@@ -82,6 +83,98 @@ git merge &lt;name&gt;
 <pre><code class="language-git">git checkout -- &lt;filename&gt;
 </code></pre>
 <p>此命令会使用之前提交到仓库中的最新内容替换掉你的工作目录中的文件。已添加到暂存区的改动以及新文件都不会受到影响。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h1 id="git-的使用">Git 的使用</h1>
+<h2 id="git-的下载与安装">Git 的下载与安装</h2>
+<p>可以到<a href="https://git-scm.com/downloads">官网</a>查看并下载对应版本的客户端。</p>
+<h2 id="创建仓库">创建仓库</h2>
+<p>在文件夹中执行</p>
+<pre><code class="language-git">git init
+</code></pre>
+<h2 id="新建文件">新建文件</h2>
+<p>我们可以使用</p>
+<pre><code class="language-git">git add &lt;filename&gt;
+</code></pre>
+<p>添加指定文件。<br>
+或者使用</p>
+<pre><code class="language-git">git add .
+</code></pre>
+<p>来添加所有文件。</p>
+<h2 id="提交版本">提交版本</h2>
+<p>现在我们已经添加了这些文件，我们希望它们能够真正被保存在Git仓库。<br>
+为此，我们将它们提交到仓库。</p>
+<pre><code class="language-git">git commit -m &quot;Adding files&quot;
+</code></pre>
+<p>如果不使用-m，会出现编辑器来让你写自己的注释信息。<br>
+当我们修改了很多文件，而不想每一个都add，想commit自动来提交本地修改，我们可以使用-a标识。如</p>
+<pre><code class="language-git">git commit -a -m &quot;Changed some files&quot;
+</code></pre>
+<p>git commit 命令的-a选项可将所有被修改或者已删除的且已经被git管理的文档提交到仓库中。<br>
+<font color=#FF0000>※千万注意，-a不会造成新文件被提交，只能修改。</font></p>
+<h2 id="删除">删除</h2>
+<p>如何你想从资源库中删除文件，可以使用</p>
+<pre><code class="language-git">git rm &lt;filename&gt;
+</code></pre>
+<h2 id="分支与合并">分支与合并</h2>
+<p>几乎每一种版本控制系统都以某种形式支持分支。使用分支意味着你可以从开发主线上分离开来，然后在不影响主线的同时继续工作。<br>
+有人把 Git 的分支模型称为必杀技特性，而正是因为它，将 Git 从版本控制系统家族里区分出来。</p>
+<h3 id="创建分支">创建分支</h3>
+<p>分支在本地完成，速度快。要创建一个新的分支，我们使用branch命令。</p>
+<pre><code class="language-git">git branch &lt;name&gt;
+</code></pre>
+<h3 id="切换分支">切换分支</h3>
+<p>branch命令不会将我们带入分支，只是创建一个新分支。所以我们使用checkout命令来更改分支。</p>
+<pre><code class="language-git">git checkout &lt;name&gt;
+</code></pre>
+<p>第一个分支，或主分支，被称为&quot;master&quot;。</p>
+<pre><code class="language-git">git checkout master
+</code></pre>
+<h3 id="合并分支">合并分支</h3>
+<p>对其他分支的更改不会反映在主分支上。如果想将更改提交到主分支，则需切换回master分支，然后使用合并。</p>
+<pre><code class="language-git">git checkout master
+git merge &lt;name&gt;
+</code></pre>
+<h3 id="删除分支">删除分支</h3>
+<p>如果您想删除分支，我们使用-d标识。</p>
+<pre><code class="language-git">git branch -d &lt;name&gt;
+</code></pre>
+<h2 id="标签">标签</h2>
+<p>为软件发布创建标签是推荐的。这个概念早已存在，在 SVN 中也有。你可以执行如下命令创建一个叫做 1.0.0 的标签：</p>
+<pre><code class="language-git">git tag 1.0.0 1b2e1d63ff
+</code></pre>
+<p>其中，1b2e1d63ff 是你想要标记的提交 ID 的前 10 位字符。可以使用下列命令获取提交 ID：</p>
+<pre><code class="language-git">git log
+</code></pre>
+<p>你也可以使用少一点的提交 ID 前几位，只要它的指向具有唯一性。</p>
+<h2 id="替换本地改动">替换本地改动</h2>
+<p>假如你操作失误（当然，这最好永远不要发生），你可以使用如下命令替换掉本地改动：</p>
+<pre><code class="language-git">git checkout -- &lt;filename&gt;
+</code></pre>
+<p>此命令会使用之前提交到仓库中的最新内容替换掉你的工作目录中的文件。已添加到暂存区的改动以及新文件都不会受到影响。</p>
+<!-- more -->
+<h1 id="github-的使用">Github 的使用</h1>
+<h2 id="注册">注册</h2>
+<p>打开 <a href="https://github.com">github.com</a> 在页面中输入用户名(Username)、邮箱(Email)、与密码(Password)，再点击注册(Sign up for GitHub)。</p>
+<h2 id="登录">登录</h2>
+<p>点击右上角的登录(Sign in)，输入用户名和密码，再点击登录(Sign in)即可。</p>
+<h2 id="新建远程仓库">新建远程仓库</h2>
+<p>点击右上角的加号，选择新仓库(New repository)，在接下来的页面输入仓库名(Repository name)、描述(Description)(可以不写)，选择公共(Public)或私有(Private)，是否自带README(Initialize this repository with a README)(之后会讲README的作用)，之后点击新建仓库(Creating repository)。</p>
+<h2 id="连接远程仓库">连接远程仓库</h2>
+<pre><code class="language-git">git remote add origin &lt;server&gt;
+</code></pre>
+<p>将 server 改成远程仓库的地址，如:</p>
+<pre><code class="language-http">https://github.com/xxxx/xxxx.git
+</code></pre>
+<p>如此你就能够将你的改动推送到远程仓库上去了。</p>
+<h2 id="推送改动">推送改动</h2>
+<p>执行如下命令以将本地仓库提交到远端仓库：</p>
+<pre><code class="language-git">git push origin master
+</code></pre>
+<p>可以把 master 换成你想要推送的任何分支。</p>
+<h2 id="更新改动">更新改动</h2>
+<p>要更新你的本地仓库至最新改动，执行：</p>
+<pre><code class="language-git">git pull
+</code></pre>
 ]]></content>
     </entry>
     <entry>
